@@ -1,0 +1,74 @@
+.topnav {
+    overflow: hidden;
+    background-color: rgb(13, 128, 173);
+    display: flex;
+    align-items: center;
+}
+
+.topnav a {
+    color: #000000;
+    text-align: center;
+    padding: 1rem 1.2rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition: 300ms;
+}
+
+.topnav a.active {
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active>img {
+    width: 2em;
+}
+
+.topnav #hamburger {
+    display: none;
+    width: 32px;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+    }
+
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a#hamburger {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        display: flex;
+
+    }
+
+
+    .topnav.responsive #hamburger {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        display: flex;
+    }
+}
