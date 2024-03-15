@@ -2,3 +2,104 @@ body {
     padding: 0;
     margin: 0;
 }
+
+main {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    border: solid gray;
+    border-radius: 10px;
+}
+
+.info-list {
+    border-top: solid gray;
+
+}
+
+.info-list>li {
+    list-style: disc;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.price {
+    padding: 1rem;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+.name {
+    width: 30rem;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    word-break: break-word;
+}
+
+.buy {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buynow {
+    padding: 2rem;
+    border-radius: 15%;
+    cursor: pointer;
+    background-color: rgb(20, 163, 20);
+    color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+
+footer {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1c98ea;
+}
+
+.img-placeholder>img {
+    width: 5rem;
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 935px) {
+    .name {
+        width: 100%;
+    }
+
+    .top {
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .carousel {
+        text-align: center;
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5rem;
+    }
+}
